@@ -25,6 +25,12 @@ public class Waypoint : MonoBehaviour
         
     }
 
+    public Vector3 GetWayointPosition(int index)
+    {
+
+        return CurrentPosition + Points[index];
+    }
+
     private void OnDrawGizmos()
     {
         if(!_gameStarted && transform.hasChanged)
